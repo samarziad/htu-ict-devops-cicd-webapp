@@ -11,10 +11,10 @@ pool:
 
 steps:
 - script: 
-    apt update 
-    apt -y upgrade
-    apt install -y python2.7-pip
-    pip install requirements.txt
+    sudo apt update 
+    sudo apt -y upgrade
+    sudo apt install -y python2.7-pip
+    sudo pip install requirements.txt
  
   displayName: 'Run a one-line script'
 
