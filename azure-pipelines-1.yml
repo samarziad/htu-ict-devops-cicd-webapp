@@ -11,6 +11,7 @@ pool:
 
 steps:
 - script: |
+     bash  	__init__.py
      bash hello.py
      
   displayName: 'Run a hello.py script'
