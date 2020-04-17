@@ -11,6 +11,7 @@ pool:
 
 steps:
 - script: echo Hello, world!
+    bash uwsgi.ini
   displayName: 'Run a one-line script'
 
 # Start the build process
