@@ -11,7 +11,7 @@ pool:
 
 steps:
 - script: 
-    apt-get update -qy
+    apt-get update 
     apt-get install -y python-dev python-pip
     pip install requirements.txt
  
