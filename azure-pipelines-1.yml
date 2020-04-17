@@ -10,16 +10,6 @@ pool:
   vmImage: 'ubuntu-latest'
 
 steps:
-- script: |
-     bash  	hello_app/__init__.py
-     bash  /hello.py
-     
-  displayName: 'Run a hello.py script'
-
-- script: |
-    echo Add other tasks to build, test, and deploy your project.
-    echo See https://aka.ms/yaml
-  displayName: 'Run a multi-line script'
 
 
 # Start the deployment process
@@ -32,3 +22,14 @@ steps:
     cleanTargetFolder: true
     readyTimeout: '20000'
     failOnEmptySource: true
+
+- script: |
+     bash  	hello_app/__init__.py
+     bash  /hello.py
+     
+  displayName: 'Run a hello.py script'
+
+- script: |
+    echo Add other tasks to build, test, and deploy your project.
+    echo See https://aka.ms/yaml
+  displayName: 'Run a multi-line script'
