@@ -13,7 +13,20 @@ steps:
 - script: echo Hello, world!
   displayName: 'Run a one-line script'
 
+# Start the build process
 - script: |
     echo Add other tasks to build, test, and deploy your project.
     echo See https://aka.ms/yaml
   displayName: 'Run a multi-line script'
+
+
+# Start the deployment process
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: 'Vm-samar@http://13.92.242.238/'
+    sourceFolder: 'hello_app/'
+    contents: '**'
+    targetFolder: '/var/www/html'
+    cleanTargetFolder: true
+    readyTimeout: '20000'
+    failOnEmptySource: true
