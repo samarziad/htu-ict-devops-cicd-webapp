@@ -63,6 +63,8 @@ fi
  #cd ~/myproject
  sudo python3.6 -m venv myprojectenv
  source myprojectenv/bin/activate
+ pip install wheel
+ pip install gunicorn flask
  sudo pip install -r requirements.txt 
   
   
