@@ -1,5 +1,5 @@
    #! /bin/bash
-   my_array=( apt python3-pip (build-essential libssl-dev libffi-dev python3-dev))
+   my_array=( apt python3-pip build-essential libssl-dev libffi-dev python3-dev)
    dpkg -s my_array &> /dev/null
  
  for key in "${!my_array[@]}"; do 
