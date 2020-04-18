@@ -12,13 +12,13 @@
     #fi
   #done
   #-eq 0
-    if [ apt list -a update -eq 0] 
-    then
-    echo "Package  is installed apt "
-  else
+   # if [ apt list -a update -eq 0] 
+    #then
+    #echo "Package  is installed apt "
+  #else
    # echo "Package  is NOT installed!"
     sudo apt update
-    fi
+   # fi
   
      #sudo apt update
      #sudo apt-y upgrade
