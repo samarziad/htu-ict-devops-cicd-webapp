@@ -27,7 +27,7 @@
 #done
 
 
-if apt-get -qq install apt; then
+if  sudo apt-get -qq install apt; then
     echo "Successfully installed $pkg"
 else
     echo "Error installing $pkg"
