@@ -1,6 +1,6 @@
    #! /bin/bash
    
-   dpkg -s apt &> /dev/null
+   dpkg -s $1 &> /dev/null
 
 if [ $? -eq 0 ]; then
     echo "Package  is installed!"
