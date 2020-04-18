@@ -18,16 +18,13 @@ steps:
      sudo apt install -y python3-venv
      python3.6 -m venv my_env
      source my_env/bin/activate
-     bash   uwsgi.ini
-     bash requirements.txt
+     sudo pip install requirements.txt
     
   displayName: 'setup enviremnint script'
 
 - script: |
      sudo gunicorn --bind=0.0.0.0:4321 --workers=4 hello:app
-     bash   hello.py
-     bash  	hello_app/__init__.py
-     
+
   displayName: 'Run a hello.py script'
 
 # Start the deployment process
