@@ -4,7 +4,7 @@
  
  for key in "${!my_array[@]}"; do 
   if [ $? -eq 0 ]; then
-    echo "Package  is installed!"
+    echo "Package  is installed + ${my_array[$key]} "
   else
    # echo "Package  is NOT installed!"
     sudo apt install ${my_array[$key]}
