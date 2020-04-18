@@ -63,7 +63,7 @@ fi
  cd ~/myproject
  sudo python3.6 -m venv myprojectenv
  source myprojectenv/bin/activate
- #sudo pip install -r requirements.txt 
+ sudo pip install -r requirements.txt 
   
   
      #sudo apt install
