@@ -13,7 +13,7 @@
   #done
   #-eq 0
 pkg="python3"
-if apt-get -qq install $pkg
+if sudo apt-get -qq install $pkg
 then
     echo "$pkg installed"
 else
