@@ -39,7 +39,7 @@ else
     echo "Error installing python3-pip "
 fi
 
-if  sudo apt-get -qq install "build-essential libssl-dev libffi-dev python3-dev" ; then
+if  sudo apt-get -qq install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools ; then
     echo "Successfully installed python3-pip-build-envi"
 else
     echo "Error installing python3-pip-build-envi "
