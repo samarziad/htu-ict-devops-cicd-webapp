@@ -11,7 +11,7 @@ pool:
 
 steps: 
 - script: |
-      bash envi_setup.sh apt 
+      bash envi_setup.sh  
      
      
     
@@ -21,17 +21,4 @@ steps:
      gunicorn --bind=0.0.0.0:4321 --workers=4 hello:app
 
   displayName: 'Run a hello App script'
-
-# Start the deployment process
-- task: CopyFilesOverSSH@0
-  inputs:
-    sshEndpoint: 'Vm-samar@13.92.242.238'
-    sourceFolder: 'hello_app/'
-    contents: '**'
-    targetFolder: '/var/www/html'
-    cleanTargetFolder: true
-    readyTimeout: '20000'
-    failOnEmptySource: true 
-
-
 
