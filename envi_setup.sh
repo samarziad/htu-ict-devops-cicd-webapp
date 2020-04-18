@@ -53,13 +53,18 @@ else
     sudo apt install python3-venv
 fi
 
-   #if apt list -a update -eq 0 ;
-  #  then
-   # echo "Package  is installed apt "
- # else
-   #echo "Package  is NOT installed!"
-    #sudo apt install
-    #fi
+if  sudo apt-get -qq install python3-venv; then
+    echo "Successfully installed python3-venv"
+else
+    sudo apt install python3-venv
+fi
+
+ sudo  mkdir ~/myproject
+ sudo  cd ~/myproject
+ sudo python3.6 -m venv myprojectenv
+ source myprojectenv/bin/activate
+ pip install -r requirements.txt 
+  
   
      #sudo apt install
      #sudo apt-y upgrade
