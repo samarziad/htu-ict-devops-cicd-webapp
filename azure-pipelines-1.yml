@@ -19,7 +19,7 @@ steps:
      python3.6 -m venv my_env
      source my_env/bin/activate
      bash   uwsgi.ini
-     pip install requirements.txt
+     bash requirements.txt
     
   displayName: 'setup enviremnint script'
 
