@@ -12,12 +12,13 @@
     #fi
   #done
   #-eq 0
-   pkg="apt"
+pkg="apt"
 if rpm -q $pkg
 then
     echo "$pkg installed"
 else
     echo "$pkg NOT installed"
+    sudo apt install
 fi
    #if apt list -a update -eq 0 ;
   #  then
