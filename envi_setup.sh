@@ -12,7 +12,10 @@
     #fi
   #done
   #-eq 0
-pkg="python3"
+  
+pkg=( "apt" "python3-pip" )
+#pkg="python3"
+for key in "${!my_array[@]}"; do
 if sudo apt-get -qq install $pkg
 then
     echo "$pkg installed"
@@ -20,6 +23,7 @@ else
     #echo "$pkg NOT installed"
     sudo apt install
 fi
+done
    #if apt list -a update -eq 0 ;
   #  then
    # echo "Package  is installed apt "
