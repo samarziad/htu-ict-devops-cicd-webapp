@@ -21,7 +21,7 @@ steps:
      sudo apt install gunicorn
      pip install -r requirements.txt
      pip install gunicorn flask
-     FLASK_APP=hello.py flask run
+     
     
   displayName: 'setup enviremnint script'
 
