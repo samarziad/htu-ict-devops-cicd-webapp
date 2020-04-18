@@ -30,7 +30,13 @@
 if  sudo apt-get -qq install apt; then
     echo "Successfully installed $pkg"
 else
-    echo "Error installing $pkg"
+    echo "Error installing apt"
+fi
+
+if  sudo apt-get -qq install python3-pip; then
+    echo "Successfully installed $pkg"
+else
+    echo "Error installing python3-pip "
 fi
 
    #if apt list -a update -eq 0 ;
