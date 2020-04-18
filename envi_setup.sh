@@ -12,7 +12,7 @@
     #fi
   #done
   #-eq 0
-pkg="apt"
+pkg="python3"
 if rpm -q $pkg
 then
     echo "$pkg installed"
