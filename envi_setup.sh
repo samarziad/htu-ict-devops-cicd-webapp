@@ -36,13 +36,21 @@ fi
 if  sudo apt-get -qq install python3-pip; then
     echo "Successfully installed python3-pip"
 else
-    echo "Error installing python3-pip "
+    sudo apt install python3-pip 
 fi
 
+
 if  sudo apt-get -qq install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools ; then
-    echo "Successfully installed python3-pip-build-envi"
+    echo "Successfully installed python3-setuptools"
 else
-    echo "Error installing python3-pip-build-envi "
+    sudo apt install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools
+fi
+
+
+if  sudo apt-get -qq install python3-venv; then
+    echo "Successfully installed python3-venv"
+else
+    sudo apt install python3-venv
 fi
 
    #if apt list -a update -eq 0 ;
