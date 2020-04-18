@@ -1,5 +1,5 @@
    #! /bin/bash
-   my_array=( apt python3-pip build-essential libssl-dev libffi-dev python3-dev)
+   my_array=( apt python3-pip )
    dpkg -s my_array &> /dev/null
  
  for key in "${!my_array[@]}"; do 
@@ -10,6 +10,13 @@
     sudo apt install ${my_array[$key]}
     fi
   done
+  
+  if [ build-essential libssl-dev libffi-dev python3-dev -eq 0 ]; then
+    echo "Package  is installed  "
+  else
+   # echo "Package  is NOT installed!"
+    sudo apt install build-essential libssl-dev libffi-dev python3-dev
+    fi
      #sudo apt update
      #sudo apt-y upgrade
      #sudo apt install -y python3-pip
