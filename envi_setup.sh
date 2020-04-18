@@ -22,7 +22,7 @@ then
     echo "${pkg[$key]} installed"
 else
     #echo "$pkg NOT installed"
-    sudo apt install
+    sudo apt install ${pkg[$key]}
 fi
 done
    #if apt list -a update -eq 0 ;
