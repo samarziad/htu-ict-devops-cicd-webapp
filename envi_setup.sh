@@ -59,11 +59,11 @@ else
     sudo apt install python3-venv
 fi
 
-   mkdir ~/myproject
-   cd ~/myproject
- sudo python3.6 -m venv myprojectenv
- source myprojectenv/bin/activate
- sudo pip install -r requirements.txt 
+ sudo  mkdir ~/myproject
+  sudo cd ~/myproject
+# sudo python3.6 -m venv myprojectenv
+ #source myprojectenv/bin/activate
+ #sudo pip install -r requirements.txt 
   
   
      #sudo apt install
