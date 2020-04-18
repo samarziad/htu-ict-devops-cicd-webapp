@@ -7,7 +7,8 @@
     echo "Package  is installed!"
   else
     echo "Package  is NOT installed!"
-  fi
+    sudo apt install ${my_array[$key]}
+    fi
   done
      #sudo apt update
      #sudo apt-y upgrade
