@@ -9,11 +9,23 @@ trigger:
 pool:
   vmImage: 'ubuntu-latest'
 
-steps:
+steps: 
 - script: |
+     sudo apt update
+     sudo apt-y upgrade
+     sudo apt install -y python3-pip
+     sudo apt install build-essential libssl-dev libffi-dev python3-dev
+     sudo apt install -y python3-venv
+     python3.6 -m venv my_env
+     source my_env/bin/activate
      bash   uwsgi.ini
-     bash  	hello_app/__init__.py
+     sudo pip install requirements.txt
+     gunicorn --bind=0.0.0.0:4321 --workers=4 hello:app
+  displayName: 'Run a one-line script'
+
+- script: |
      bash   hello.py
+     bash  	hello_app/__init__.py
      
   displayName: 'Run a hello.py script'
 
