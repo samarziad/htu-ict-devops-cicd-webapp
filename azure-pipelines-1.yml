@@ -20,7 +20,7 @@ steps:
      source my_env/bin/activate
      sudo apt install gunicorn
      pip install -r requirements.txt
-     FLASK_APP=hello.py flask run
+   
      
      
     
