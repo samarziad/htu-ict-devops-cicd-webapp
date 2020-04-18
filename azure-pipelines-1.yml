@@ -18,7 +18,7 @@ steps:
      sudo apt install -y python3-venv
      python3.6 -m venv my_env
      source my_env/bin/activate
-     sudo pip install requirements.txt
+     pip install requirements.txt
     
   displayName: 'setup enviremnint script'
 
