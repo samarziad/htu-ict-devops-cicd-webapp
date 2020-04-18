@@ -13,18 +13,26 @@
   #done
   #-eq 0
   
-pkg=( "apt" "python3-pip" )
+#pkg=( "apt" "python3-pip" )
 #pkg="python3"
-for key in "${!pkg[@]}"; do
-if sudo apt-get -qq install $?
+#for key in "${!pkg[@]}"; do
+#if sudo apt-get -qq install $?
 #$pkg
-then
-    echo "${pkg[$key]} installed"
-else
+#then
+    #echo "${pkg[$key]} installed"
+#else
     #echo "$pkg NOT installed"
-    sudo apt install ${pkg[$key]}
+ #   sudo apt install ${pkg[$key]}
+#fi
+#done
+
+
+if apt-get -qq install apt; then
+    echo "Successfully installed $pkg"
+else
+    echo "Error installing $pkg"
 fi
-done
+
    #if apt list -a update -eq 0 ;
   #  then
    # echo "Package  is installed apt "
