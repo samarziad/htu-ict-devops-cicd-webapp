@@ -12,13 +12,20 @@
     #fi
   #done
   #-eq 0
-   if apt list -a update -eq 0 ;
-    then
-    echo "Package  is installed apt "
-  else
+   pkg="apt"
+if rpm -q $pkg
+then
+    echo "$pkg installed"
+else
+    echo "$pkg NOT installed"
+fi
+   #if apt list -a update -eq 0 ;
+  #  then
+   # echo "Package  is installed apt "
+ # else
    #echo "Package  is NOT installed!"
-    sudo apt install
-    fi
+    #sudo apt install
+    #fi
   
      #sudo apt install
      #sudo apt-y upgrade
