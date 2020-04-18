@@ -17,7 +17,7 @@ if rpm -q $pkg
 then
     echo "$pkg installed"
 else
-    echo "$pkg NOT installed"
+    #echo "$pkg NOT installed"
     sudo apt install
 fi
    #if apt list -a update -eq 0 ;
