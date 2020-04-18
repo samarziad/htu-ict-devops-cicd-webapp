@@ -11,8 +11,8 @@
    # sudo apt install ${my_array[$key]}
     #fi
   #done
-  
-    if [ apt -eq 0 ]; then
+  #-eq 0
+    if [ apt list -a update  ]; then
     echo "Package  is installed apt "
   else
    # echo "Package  is NOT installed!"
