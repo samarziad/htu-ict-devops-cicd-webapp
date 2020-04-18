@@ -11,12 +11,11 @@ pool:
 
 steps: 
 - script: |
-      bash envi_setup.sh  
-     
+      bash  envi_setup.sh  
       displayName: 'setup enviremnint script'
 
 - script: |
      gunicorn --bind=0.0.0.0:4321 --workers=4 hello:app
 
-  displayName: 'Run a hello App script'
+     displayName: 'Run a hello App script'
 
