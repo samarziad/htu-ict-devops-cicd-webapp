@@ -1,12 +1,14 @@
    #! /bin/bash
-   
-   dpkg -s $1 &> /dev/null
-
-if [ $? -eq 0 ]; then
+   my_array=( apt python3-pip)
+   dpkg -s my_array &> /dev/null
+ 
+ for key in "${!my_array[@]}"; do 
+  if [ $? -eq 0 ]; then
     echo "Package  is installed!"
-else
+  else
     echo "Package  is NOT installed!"
-fi
+  fi
+  done
      #sudo apt update
      #sudo apt-y upgrade
      #sudo apt install -y python3-pip
