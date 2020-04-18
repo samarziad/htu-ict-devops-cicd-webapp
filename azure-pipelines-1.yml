@@ -16,11 +16,11 @@ steps:
      sudo apt install -y python3-pip
      sudo apt install build-essential libssl-dev libffi-dev python3-dev
      sudo apt install -y python3-venv
-     pip install wheel
      python3.6 -m venv my_env
      source my_env/bin/activate
      sudo apt install gunicorn
      pip install -r requirements.txt
+     pip install gunicorn flask
      FLASK_APP=hello.py flask run
     
   displayName: 'setup enviremnint script'
