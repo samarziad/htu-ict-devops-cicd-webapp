@@ -6,7 +6,7 @@
   if [ $? -eq 0 ]; then
     echo "Package  is installed!"
   else
-    echo "Package  is NOT installed!"
+   # echo "Package  is NOT installed!"
     sudo apt install ${my_array[$key]}
     fi
   done
