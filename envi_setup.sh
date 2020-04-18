@@ -15,8 +15,9 @@
   
 pkg=( "apt" "python3-pip" )
 #pkg="python3"
-for key in "${!my_array[@]}"; do
-if sudo apt-get -qq install $pkg
+for key in "${!pkg[@]}"; do
+if sudo apt-get -qq install $?
+#$pkg
 then
     echo "$pkg installed"
 else
