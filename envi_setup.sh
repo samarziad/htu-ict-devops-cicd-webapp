@@ -12,7 +12,7 @@
     #fi
   #done
   #-eq 0
-   if [ apt list -a update -eq 0];
+   if apt list -a update -eq 0 ;
     then
     echo "Package  is installed apt "
   else
