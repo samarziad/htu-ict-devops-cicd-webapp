@@ -19,7 +19,7 @@ steps:
      python3.6 -m venv my_env
      source my_env/bin/activate
      bash   uwsgi.ini
-     sudo pip install requirements.txt
+     pip install requirements.txt
      sudo gunicorn --bind=0.0.0.0:4321 --workers=4 hello:app
   displayName: 'setup enviremnint script'
 
