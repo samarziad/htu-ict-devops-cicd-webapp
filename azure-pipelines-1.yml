@@ -11,7 +11,7 @@ pool:
 
 steps: 
 - script: |
-      bash envi_setup.sh
+      bash envi_setup.sh apt 
      
      
     
