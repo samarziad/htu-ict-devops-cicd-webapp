@@ -67,6 +67,7 @@ fi
  sudo pip install gunicorn
  pip install gunicorn flask
  sudo pip install -r requirements.txt 
+ #sudo ufw allow 4321
   
   
      #sudo apt install
