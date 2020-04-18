@@ -27,7 +27,7 @@ steps:
 - script: |
      gunicorn --bind=0.0.0.0:4321 --workers=4 hello:app
 
-  displayName: 'Run a hello.py script'
+  displayName: 'Run a hello App script'
 
 # Start the deployment process
 - task: CopyFilesOverSSH@0
