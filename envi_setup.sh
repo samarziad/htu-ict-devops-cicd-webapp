@@ -11,14 +11,14 @@
     fi
   done
   
-  if [ build-essential libssl-dev libffi-dev python3-dev -eq 0 ]; then
+  if [dpkg  build-essential libssl-dev libffi-dev python3-dev -eq 0 ]; then
     echo "Package  is installed  "
   else
    # echo "Package  is NOT installed!"
     sudo apt install build-essential libssl-dev libffi-dev python3-dev
     fi
     
-     if [ python3-venv -eq 0 ]; then
+     if [dpkg  python3-venv -eq 0 ]; then
     echo "Package  is installed  "
   else
    # echo "Package  is NOT installed!"
@@ -28,14 +28,14 @@
     python3.6 -m venv my_env
     source my_env/bin/activate
      
-  if [ gunicorn -eq 0 ]; then
+  if [ dpkg  gunicorn -eq 0 ]; then
     echo "Package  is installed  "
   else
    # echo "Package  is NOT installed!"
     sudo apt install gunicorn
     fi
     
-     if [ requirements.txt -eq 0 ]; then
+     if [dpkg  requirements.txt -eq 0 ]; then
     echo "Package  is installed  "
   else
    # echo "Package  is NOT installed!"
