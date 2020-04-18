@@ -20,8 +20,8 @@ steps:
      source my_env/bin/activate
      bash   uwsgi.ini
      sudo pip install requirements.txt
-     gunicorn --bind=0.0.0.0:4321 --workers=4 hello:app
-  displayName: 'Run a one-line script'
+     sudo gunicorn --bind=0.0.0.0:4321 --workers=4 hello:app
+  displayName: 'setup enviremnint script'
 
 - script: |
      bash   hello.py
