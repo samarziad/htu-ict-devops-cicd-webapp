@@ -20,7 +20,7 @@
     
    # fi
   
-     sudo apt update
+     sudo apt install
      sudo apt-y upgrade
      sudo apt install -y python3-pip
      sudo apt install build-essential libssl-dev libffi-dev python3-dev
