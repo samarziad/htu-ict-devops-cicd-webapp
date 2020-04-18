@@ -19,7 +19,7 @@ for key in "${!pkg[@]}"; do
 if sudo apt-get -qq install $?
 #$pkg
 then
-    echo "$pkg installed"
+    echo "${pkg[$key]} installed"
 else
     #echo "$pkg NOT installed"
     sudo apt install
