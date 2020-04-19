@@ -11,6 +11,6 @@ pool:
 
 steps: 
 - script: |
-    bash  envi_setup.sh  
+    bash   setup.sh 
   displayName: 'setup enviremnint script'
 
