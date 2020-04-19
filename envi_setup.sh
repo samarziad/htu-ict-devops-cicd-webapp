@@ -27,7 +27,7 @@
 #done
 #sudo apt-get -qq install apt
 
-if sudo apt-get -qq install  apt &>/dev/null | grep -eq 0 ; then
+if dpkg -s pt &>/dev/null  -eq 0 ; then
     echo "Successfully installed apt"
 else
    sudo apt install
