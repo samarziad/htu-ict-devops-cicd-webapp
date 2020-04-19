@@ -5,7 +5,7 @@
       sudo apt install python3-venv
       #mkdir ~/myproject
      # cd ~/myproject
-      cd /home/vsts/work/1/s
+      sudo cd /home/vsts/work/1/s
       #sudo  python3.6 -m venv myprojectenv
       #source myprojectenv/bin/activate
       sudo  python3.6 -m venv s
