@@ -1,10 +1,7 @@
 #!/bin/bash 
 
-     git remote add origin https://github.com/samarziad/htu-ict-devops-cicd-webapp
-
-
-
-      cd htu-ict-devops-cicd-webapp 
+    
+      cd  C:\agent\_work\1\s\htu-ict-devops-cicd-webapp 
       #sudo apt update
       #sudo apt install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools
       #sudo apt install python3-venv
