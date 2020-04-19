@@ -14,7 +14,3 @@ steps:
     bash  envi_setup.sh  
   displayName: 'setup enviremnint script'
 
-- script: |
-    bash  serverRun.sh 
-  displayName: 'setup server script'
-
