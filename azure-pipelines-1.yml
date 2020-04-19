@@ -4,7 +4,15 @@
 # https://aka.ms/yaml
 
 trigger:
-- master
+ branches:
+  include:
+  - master
+ 
+ paths:
+  include:
+  - htu-ict-devops-cicd-webapp
+  exclude:
+  - htu-ict-devops-cicd-webapp/README.md
 
 pool:
   vmImage: 'ubuntu-latest'
