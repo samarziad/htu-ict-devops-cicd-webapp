@@ -27,7 +27,7 @@
 #done
 #sudo apt-get -qq install apt
 
-if sudo apt-get -qq install  python3-pip 2>/dev/null | -eq 0 ; then
+if sudo apt-get -qq install  apt &>/dev/null -eq 0 ; then
     echo "Successfully installed apt"
 else
    sudo apt install
@@ -42,11 +42,11 @@ else
     sudo apt install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools 
 fi
 
-if  dpkg-query -W -f '${Status} \n' python3-dev 2>/dev/null | grep -q "install ok installed" ; then
-    echo "Successfully installed python3-dev"
-else
-    sudo apt install  python3-dev 
-fi
+#if  dpkg-query -W -f '${Status} \n' python3-dev 2>/dev/null | grep -q "install ok installed" ; then
+ #   echo "Successfully installed python3-dev"
+#else
+ #   sudo apt install  python3-dev 
+#fi
 
 #if  [dpkg-query -W -f='${Status} ${Version}\n' build-essential 2>/dev/null | grep -q "ok installed" ]; then
  #   echo "Successfully installed build-essential"
