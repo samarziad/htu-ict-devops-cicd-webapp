@@ -5,8 +5,8 @@
       sudo apt install python3-venv
       mkdir ~/myproject
       cd ~/myproject
-      python3.6 -m venv myprojectenv
+      sudo  python3.6 -m venv myprojectenv
       source myprojectenv/bin/activate
       pip install wheel
-      pip install gunicorn flask click itsdangerous Jinja2 MarkupSafe Werkzeug
+      sudo pip install gunicorn flask click itsdangerous Jinja2 MarkupSafe Werkzeug
      # pip install -r requirements.txt
