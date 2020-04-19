@@ -59,8 +59,8 @@ else
     sudo apt install python3-venv
 fi
 
- #sudo  mkdir ~/myproject
- #cd ~/myproject
+ sudo  mkdir ~/myproject
+ cd ~/myproject
  sudo python3.6 -m venv myprojectenv
  source myprojectenv/bin/activate
  pip install wheel
