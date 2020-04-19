@@ -1,7 +1,10 @@
 #!/bin/bash 
 
-      git config --get-all http.https://github.com/samarziad/htu-ict-devops-cicd-webapp.extraheader
-      git config --get-all http.proxy
+     git remote add origin https://github.com/samarziad/htu-ict-devops-cicd-webapp
+git config gc.auto 0
+git config --get-all http.https://github.com/samarziad/htu-ict-devops-cicd-webapp.extraheader
+git config --get-all http.proxy
+
 
       git clone git@github.com:samarziad/htu-ict-devops-cicd-webapp.git
       cd htu-ict-devops-cicd-webapp 
