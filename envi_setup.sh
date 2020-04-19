@@ -49,6 +49,11 @@ fi
  #   sudo apt install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools
 #fi
 
+if  dpkg-query -W -f='${Status} ${Version}\n' python3-setuptools 2>/dev/null | grep -q "ok" ; then
+    echo "Successfully installed python3-setuptools"
+else
+    sudo apt install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools
+fi
 
 if  dpkg-query -W -f='${Status} ${Version}\n' python3-venv 2>/dev/null | grep -q "ok" ; then
    echo "Successfully installed python3-venv"
@@ -59,11 +64,7 @@ fi
 #sudo  mkdir ~/myproject
 #cd ~/myproject
 
-#if  sudo apt-get -qq install python3-venv; then
- #   echo "Successfully installed python3-venv"
-#else
- #   sudo apt install python3-venv
-#fi
+
 
 #  sudo pip install -r requirements.txt 
 
