@@ -27,7 +27,7 @@
 #done
 #sudo apt-get -qq install apt
 
-if dpkg-query -W -f='${Status} ${Version}\n' apt ; 
+if dpkg-query -W -f='${Status} ${Version}\n' apt -eq 0 ; 
 then
     echo "Successfully installed apt"
 else
@@ -36,21 +36,21 @@ else
 fi
 
 
-if dpkg-query -W -f='${Status} ${Version}\n' python3-pip; then
+if dpkg-query -W -f='${Status} ${Version}\n' python3-pip -eq 0; then
     echo "Successfully installed python3-pip"
 else
     sudo apt install python3-pip 
 fi
 
 #python3-pip python3-dev build-essential libssl-dev libffi-dev
-if  dpkg-query -W -f='${Status} ${Version}\n'  python3-setuptools ; then
+if  dpkg-query -W -f='${Status} ${Version}\n'  python3-setuptools -eq 0 ; then
     echo "Successfully installed python3-setuptools"
 else
     sudo apt install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools
 fi
 
 
-if  dpkg-query -W -f='${Status} ${Version}\n' python3-venv; then
+if  dpkg-query -W -f='${Status} ${Version}\n' python3-venv -eq 0 ; then
    echo "Successfully installed python3-venv"
 else
   sudo apt install python3-venv
