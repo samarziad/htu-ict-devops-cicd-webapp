@@ -27,8 +27,7 @@
 #done
 #sudo apt-get -qq install apt
 
-if [${dpkg-query -W -f='${Status} ${Version}\n' apt} -eq 0] ; 
-then
+if [${dpkg-query -W -f='${Status} ${Version}\n' apt} -eq 0]; then
     echo "Successfully installed apt"
 else
    sudo apt install
