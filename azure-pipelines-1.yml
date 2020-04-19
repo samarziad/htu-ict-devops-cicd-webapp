@@ -16,7 +16,7 @@ steps:
 
 
 - script: |
-    git@github.com:samarziad/htu-ict-devops-cicd-webapp.git
+   git clone  git@github.com:samarziad/htu-ict-devops-cicd-webapp.git
   displayName: 'cy '
 
 - script: |
