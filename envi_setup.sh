@@ -27,7 +27,7 @@
 #done
 #sudo apt-get -qq install apt
 
-if ddpkg -query -W -f '${Status} \n'  apt 2>/dev/null  | grep -q "install ok installed" ; then
+if sudo apt-get -qq install  python3-pip -eq 0 ; then
     echo "Successfully installed apt"
 else
    sudo apt install
