@@ -8,5 +8,5 @@
       python3.6 -m venv myprojectenv
       source myprojectenv/bin/activate
       pip install wheel
-      pip install gunicorn flask
-      pip install -r requirements.txt
+      pip install gunicorn flask click itsdangerous Jinja2 MarkupSafe Werkzeug
+     # pip install -r requirements.txt
