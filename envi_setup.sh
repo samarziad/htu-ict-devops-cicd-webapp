@@ -25,33 +25,39 @@
  #   sudo apt install ${pkg[$key]}
 #fi
 #done
+#sudo apt-get -qq install apt
 
-
-if  sudo apt-get -qq install apt; then
+if dpkg-query -W -f='${Status} ${Version}\n' apt ; 
+then
     echo "Successfully installed apt"
 else
-    echo "Error installing apt"
+   sudo apt install
+   sudo apt -y upgrade
 fi
 
-if  sudo apt-get -qq install python3-pip; then
+
+if dpkg-query -W -f='${Status} ${Version}\n' python3-pip; then
     echo "Successfully installed python3-pip"
 else
     sudo apt install python3-pip 
 fi
 
 #python3-pip python3-dev build-essential libssl-dev libffi-dev
-if  sudo apt-get -qq install  python3-setuptools ; then
+if  dpkg-query -W -f='${Status} ${Version}\n'  python3-setuptools ; then
     echo "Successfully installed python3-setuptools"
 else
     sudo apt install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools
 fi
 
 
-#if  sudo apt-get -qq install python3-venv; then
- #   echo "Successfully installed python3-venv"
-#else
- #   sudo apt install python3-venv
-#fi
+if  dpkg-query -W -f='${Status} ${Version}\n' python3-venv; then
+   echo "Successfully installed python3-venv"
+else
+  sudo apt install python3-venv
+fi
+
+#sudo  mkdir ~/myproject
+#cd ~/myproject
 
 #if  sudo apt-get -qq install python3-venv; then
  #   echo "Successfully installed python3-venv"
@@ -60,13 +66,12 @@ fi
 #fi
 
 #  sudo pip install -r requirements.txt 
- #sudo  mkdir ~/myproject
- #cd ~/myproject
+
  #sudo python3.6 -m venv myprojectenv
  #source myprojectenv/bin/activate
  #pip install wheel
  #sudo pip install gunicorn
- #pip install gunicorn flask
+ #sudo pip install gunicorn flask
  
  #sudo ufw allow 4321
   
