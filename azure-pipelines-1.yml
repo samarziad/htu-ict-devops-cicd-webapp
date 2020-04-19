@@ -15,9 +15,6 @@ steps:
   displayName: 'setup enviremnint script'
 
 
-- script: |
-    git remote add origin https://github.com/samarziad/htu-ict-devops-cicd-webapp 
-  displayName: 'cy git remote '
 
 - script: |
     bash   serverRun.sh 
