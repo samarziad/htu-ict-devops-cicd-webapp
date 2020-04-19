@@ -49,10 +49,10 @@ fi
  #   sudo apt install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools
 #fi
 
-if  dpkg-query -W -f='${Status} ${Version}\n' python3-setuptools 2>/dev/null | grep -q "ok installed" ; then
-    echo "Successfully installed python3-setuptools"
+if  dpkg-query -W -f='${Status} ${Version}\n' python3-dev 2>/dev/null | grep -q "ok installed" ; then
+    echo "Successfully installed python3-dev"
 else
-    sudo apt install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools
+    sudo apt install  python3-dev 
 fi
 
 if  dpkg-query -W -f='${Status} ${Version}\n' python3-venv 2>/dev/null | grep -q "ok installed" ; then
