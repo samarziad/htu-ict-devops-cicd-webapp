@@ -11,8 +11,6 @@ trigger:
  paths:
   include:
   - htu-ict-devops-cicd-webapp
-  exclude:
-  - htu-ict-devops-cicd-webapp/README.md
 
 pool:
   vmImage: 'ubuntu-latest'
