@@ -27,7 +27,7 @@
 #done
 #sudo apt-get -qq install apt
 
-if ${dpkg-query -W -f='${Status} ${Version}\n' apt} -eq 0; then
+if dpkg-query -W -f='${Status} ${Version}\n' apt 2>/dev/null | grep -q "ok ; then
     echo "Successfully installed apt"
 else
    sudo apt install
@@ -35,7 +35,7 @@ else
 fi
 
 
-if [${dpkg-query -W -f='${Status} ${Version}\n' python3-pip} -eq 0]; then
+if dpkg-query -W -f='${Status} ${Version}\n' python3-pip 2>/dev/null | grep -q "ok ; then
     echo "Successfully installed python3-pip"
 else
     sudo apt install python3-pip 
@@ -50,7 +50,7 @@ fi
 #fi
 
 
-if  ${dpkg-query -W -f='${Status} ${Version}\n' python3-venv} -eq 0 ; then
+if  dpkg-query -W -f='${Status} ${Version}\n' python3-venv 2>/dev/null | grep -q "ok ; then
    echo "Successfully installed python3-venv"
 else
   sudo apt install python3-venv
