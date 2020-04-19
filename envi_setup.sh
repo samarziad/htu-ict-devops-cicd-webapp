@@ -55,11 +55,17 @@ else
     sudo apt install  python3-dev 
 fi
 
-if  dpkg-query -W -f='${Status} ${Version}\n' python3-venv 2>/dev/null | grep -q "ok installed" ; then
-   echo "Successfully installed python3-venv"
+if  dpkg-query -W -f='${Status} ${Version}\n' build-essential 2>/dev/null | grep -q "ok installed" ; then
+    echo "Successfully installed build-essential"
 else
-  sudo apt install python3-venv
+    sudo apt install  build-essential
 fi
+
+#if  dpkg-query -W -f='${Status} ${Version}\n' python3-venv 2>/dev/null | grep -q "ok installed" ; then
+ #  echo "Successfully installed python3-venv"
+#else
+ # sudo apt install python3-venv
+#fi
 
 #sudo  mkdir ~/myproject
 #cd ~/myproject
