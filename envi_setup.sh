@@ -35,7 +35,7 @@ else
 fi
 
 
-if dpkg-query -W -f='${Status} ${Version}\n' python3-pip 2>/dev/null | grep -q "ok ; then
+if dpkg-query -W -f='${Status} ${Version}\n' python3-pip 2>/dev/null | grep -q "ok" ; then
     echo "Successfully installed python3-pip"
 else
     sudo apt install python3-pip 
