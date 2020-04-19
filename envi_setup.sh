@@ -34,7 +34,7 @@ else
    #sudo apt -y upgrade
 fi
 
-sudo apt update
+
 
 if dpkg -s  python3-pip 2>/dev/null | grep -q "ok installed" ; then
     echo "Successfully installed python3-pip"
