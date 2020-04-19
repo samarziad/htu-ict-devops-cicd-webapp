@@ -3,11 +3,12 @@
       sudo apt update
       sudo apt install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools
       sudo apt install python3-venv
-      #mkdir ~/myproject
-     # cd ~/myproject
-      sudo cd /home/vsts/work/1/s
-      #sudo  python3.6 -m venv myprojectenv
-      #source myprojectenv/bin/activate
+      cd ~/myproject
+      sudo cp /home/vsts/work/1/s .
+      # mkdir ~/myproject
+     
+      sudo  python3.6 -m venv myprojectenv
+      source myprojectenv/bin/activate
       sudo  python3.6 -m venv s
       source s/bin/activate
       pip install wheel
