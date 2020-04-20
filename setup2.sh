@@ -13,9 +13,10 @@
       sudo apt install nginx
       sudo service nginx start
       
-      
+      sudo ufw allow 5000
+      python  	hello.py
       cd  htu-ict-devops-cicd-webapp 
-      echo  "${PATH}"
+      #echo  "${PATH}"
       #echo  "${ls -al}"
       #sudo pip install gunicorn flask click itsdangerous Jinja2 MarkupSafe Werkzeug
        #pip3 install --user pipenv
