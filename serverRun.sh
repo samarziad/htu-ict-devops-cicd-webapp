@@ -8,13 +8,14 @@
   #bash uwsgi.ini
     #cd ~/htu-ict-devops-cicd-webapp
    #gunicorn --bind= 0.0.0.0  --workers=4 hello:app
-   cd  htu-ict-devops-cicd-webapp 
-    pip install gunicorn
+   cd  htu-ict-devops-cicd-webapp
+   
     #gunicorn hello:app -b 0.0.0.0:5000
-    gunicorn --bind= 0.0.0.0  --workers=4 hello:app
-    apt-get install supervisor
+    sudo apt-get install supervisor
     sudo supervisorctl reread
     sudo service supervisor restart
+        sudo gunicorn --bind= 0.0.0.0  --workers=4 hello:app
+
   #gunicorn -b 0.0.0.0:5000 hello:app
    sudo nginx -t
    sudo service nginx restart
