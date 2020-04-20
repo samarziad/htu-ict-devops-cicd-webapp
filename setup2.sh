@@ -1,8 +1,6 @@
 
 #! bin/bash 
-      cd htu-ict-devops-cicd-webapp
-      
-      
+     
       #sudo  python3.6 -m venv s
       #source s/bin/activate
       sudo pip install wheel
