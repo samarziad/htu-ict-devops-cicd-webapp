@@ -10,7 +10,9 @@
    #gunicorn --bind= 0.0.0.0  --workers=4 hello:app
    cd  htu-ict-devops-cicd-webapp 
     pip install gunicorn
-    gunicorn hello:app -b 0.0.0.0:5000
+    #gunicorn hello:app -b 0.0.0.0:5000
+    gunicorn --bind= 0.0.0.0  --workers=4 hello:app
+    apt-get install supervisor
     sudo supervisorctl reread
     sudo service supervisor restart
   #gunicorn -b 0.0.0.0:5000 hello:app
