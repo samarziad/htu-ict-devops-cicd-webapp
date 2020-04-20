@@ -2,7 +2,7 @@
 
 
 
-       locate file  "/home/vsts/work/1/s"
+       locate  /home/vsts/work/1/s
     
     #locate  \agent\_work\1\s\
     #locate   htu-ict-devops-cicd-webapp
