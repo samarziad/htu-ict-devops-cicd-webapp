@@ -1,20 +1,15 @@
 #!/bin/bash 
 
-
-
-       locate  "/home/vsts/work/1/s"
     
     #locate  \agent\_work\1\s\
     #locate   htu-ict-devops-cicd-webapp
-      #cd contoso-demo
-      #cd c 
       #cd $(Agent.BuildDirectory)
       #cd htu-ict-devops-cicd-webapp
-      #sudo apt update
-      #sudo apt install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools
-      #sudo apt install python3-venv
-      #mkdir ~/myproject
-      #cd ~/myproject
+      sudo apt update
+      sudo apt install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools
+      sudo apt install python3-venv
+      mkdir ~/htu-ict-devops-cicd-webapp
+      cd ~/htu-ict-devops-cicd-webapp
       #sudo cp /home/vsts/work/1/s .
       # 
      
