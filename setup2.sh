@@ -16,7 +16,7 @@
       
       cd  htu-ict-devops-cicd-webapp 
       echo  "${PATH}"
-       echo  "${ls -al}"
+      #echo  "${ls -al}"
       #sudo pip install gunicorn flask click itsdangerous Jinja2 MarkupSafe Werkzeug
        #pip3 install --user pipenv
        #pipenv install gunicorn
