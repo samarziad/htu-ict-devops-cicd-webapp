@@ -1,8 +1,8 @@
 #!/bin/bash 
 
-    
-    find   htu-ict-devops-cicd-webapp
-    #cd contoso-demo
+    locate s
+    locate   htu-ict-devops-cicd-webapp
+      #cd contoso-demo
       #cd c 
       #cd $(Agent.BuildDirectory)
       #cd htu-ict-devops-cicd-webapp
