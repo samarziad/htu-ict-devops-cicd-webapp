@@ -10,6 +10,7 @@
       echo  "${PATH}"
       sudo pip install wheel
       sudo pip install -r requirements.txt
+      sudo apt install nginx
       sudo service nginx start
       
       
