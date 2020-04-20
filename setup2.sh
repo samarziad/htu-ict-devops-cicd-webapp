@@ -9,6 +9,8 @@
       #python -m pip3 install --upgrade pip3
       echo  "${PATH}"
       sudo pip install wheel
+      sudo pip install -r requirements.txt
+      
       #sudo pip install gunicorn flask click itsdangerous Jinja2 MarkupSafe Werkzeug
        #pip3 install --user pipenv
        #pipenv install gunicorn
