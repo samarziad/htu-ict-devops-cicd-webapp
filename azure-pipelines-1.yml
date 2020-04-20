@@ -13,8 +13,7 @@ steps:
   displayName: 'setup enviremnint 1 script'
 
 - script: |
-    trigger:
-    - master
+    https://dev.azure.com/SamarLubbad/Flask%20Webapp/_build/results?buildId=1178&view=logs&j=12f1170f-54f2-53f3-20dd-22fc7dff55f9&t=63e8042a-f367-5aec-692c-fcc654be55e4&l=18
   displayName: 'clne  github '
 
 - script: |
