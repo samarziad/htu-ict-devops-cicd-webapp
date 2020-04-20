@@ -3,9 +3,6 @@
 # Add steps that build, run tests, deploy, and more:
 # https://aka.ms/yaml
 
-trigger:
-  - master 
-
 pool:
   vmImage: 'ubuntu-latest'
 
@@ -13,7 +10,12 @@ steps:
 
 - script: |
     bash   setup.sh 
-  displayName: 'setup enviremnint script'
+  displayName: 'setup enviremnint 1 script'
+
+- script: |
+    trigger:
+    - master
+  displayName: 'clne  github '
 
 - script: |
     bash   serverRun.sh 
