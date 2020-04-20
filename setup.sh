@@ -10,6 +10,8 @@
       sudo apt install python3-venv
       mkdir ~/htu-ict-devops-cicd-webapp
       cd ~/htu-ict-devops-cicd-webapp
+      sudo  python3.6 -m venv htu-ict-devops-cicd-webappenv
+      source htu-ict-devops-cicd-webappenv/bin/activate
       #sudo cp /home/vsts/work/1/s .
       # 
      
