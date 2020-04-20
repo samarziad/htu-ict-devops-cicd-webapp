@@ -14,9 +14,9 @@ steps:
 
 - script: |
    git clone https://github.com/samarziad/htu-ict-devops-cicd-webapp.git
-  displayName: 'clne  github '
+  displayName: 'clone  github '
 
 - script: |
-    bash   serverRun.sh 
-  displayName: 'run server  script'
+    bash   setup2.sh
+  displayName: 'setup enviremnint 2 script'
 
