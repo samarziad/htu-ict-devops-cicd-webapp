@@ -15,6 +15,7 @@
       
       sudo ufw allow 5000
       python  	hello.py
+      sudo service nginx start
       cd  htu-ict-devops-cicd-webapp 
       #echo  "${PATH}"
       #echo  "${ls -al}"
