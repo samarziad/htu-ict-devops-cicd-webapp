@@ -5,7 +5,8 @@
       #source s/bin/activate
       #pip3 install gunicorn
       #sudo apt-get -t stretch-backports install gunicorn
-      sudo apt install gunicorn3
+      #sudo apt install gunicorn3
+      python -m pip install --upgrade pip
       sudo pip install wheel
       #sudo pip install gunicorn flask click itsdangerous Jinja2 MarkupSafe Werkzeug
        
