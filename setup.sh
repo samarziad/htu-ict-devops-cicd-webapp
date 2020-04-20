@@ -1,7 +1,7 @@
 #!/bin/bash 
 
-    locate c
-    locate  \agent\_work\1\s\
+    
+    #locate  \agent\_work\1\s\
     locate   htu-ict-devops-cicd-webapp
       #cd contoso-demo
       #cd c 
