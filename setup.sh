@@ -1,7 +1,8 @@
 #!/bin/bash 
 
     
-    cd contoso-demo
+    whereis  htu-ict-devops-cicd-webapp
+    #cd contoso-demo
       #cd c 
       #cd $(Agent.BuildDirectory)
       #cd htu-ict-devops-cicd-webapp
