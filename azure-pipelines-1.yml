@@ -28,7 +28,7 @@ steps:
 - task: CopyFilesOverSSH@0
   inputs:
         sshEndpoint: 'Vm-samar@13.92.242.238'
-        sourceFolder: 'htu-ict-devops-cicd-webapp/'
+        sourceFolder: 'hello_app/'
         contents: '**'
         targetFolder: '/var/www/html'
         cleanTargetFolder: true
