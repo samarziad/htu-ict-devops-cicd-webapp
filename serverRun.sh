@@ -9,6 +9,6 @@
     #cd ~/htu-ict-devops-cicd-webapp
    #gunicorn --bind= 0.0.0.0  --workers=4 hello:app
    cd  htu-ict-devops-cicd-webapp 
-   gunicorn --bind=0.0.0.0  --workers=4 hello:app
+   exec gunicorn --bind=0.0.0.0  --workers=4 hello:app
   #gunicorn -b 0.0.0.0:5000 hello:app
   
