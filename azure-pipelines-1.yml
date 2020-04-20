@@ -20,3 +20,7 @@ steps:
     bash   setup2.sh
   displayName: 'setup enviremnint 2 script'
 
+   
+- script: |
+    bash    serverRun.sh
+  displayName: ' serverRun.sh script'
