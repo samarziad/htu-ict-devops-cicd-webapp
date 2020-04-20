@@ -23,14 +23,15 @@
      sudo curl https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py | python -
      sudo curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python -
       export PATH="/usr/local/bin:$PATH"
+     
      sudo pip install virtualenv
      mkdir my_app
      cd my_app
      python3.6 -m virtualenv my_app_venv
      source my_app_venv/bin/activate
      pip install gunicorn
-     pip install -r requirements.txt
      
+     echo  "${PATH}"
      #mkdir ~/htu-ict-devops-cicd-webapp
      #cd ~/htu-ict-devops-cicd-webapp
       #sudo  python3.6 -m venv myprojectenv
