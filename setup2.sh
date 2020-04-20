@@ -9,9 +9,14 @@
       #python -m pip3 install --upgrade pip3
       sudo pip install wheel
       #sudo pip install gunicorn flask click itsdangerous Jinja2 MarkupSafe Werkzeug
-       pip3 install --user pipenv
-       pipenv install gunicorn
-       pipenv shell
+       #pip3 install --user pipenv
+       #pipenv install gunicorn
+       #pipenv shell
+       pip install gunicorn
        sudo pip install -r requirements.txt
+       web: gunicorn gettingstarted.wsgi
+       heroku config:set WEB_CONCURRENCY=3
+       web: gunicorn hello:app
+       
         
       #gunicorn --bind= 0.0.0.0:4321 --workers=4 hello:app
