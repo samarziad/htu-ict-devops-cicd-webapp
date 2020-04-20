@@ -17,7 +17,7 @@
       python  	hello.py
       
       #sudo service nginx start
-      cd  htu-ict-devops-cicd-webapp 
+      #cd  htu-ict-devops-cicd-webapp 
       #echo  "${PATH}"
       #echo  "${ls -al}"
       #sudo pip install gunicorn flask click itsdangerous Jinja2 MarkupSafe Werkzeug
