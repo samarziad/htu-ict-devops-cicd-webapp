@@ -29,9 +29,10 @@
      python3.6 -m virtualenv my_app_venv
      source my_app_venv/bin/activate
      pip install gunicorn
+     pip install -r requirements.txt
      
-     mkdir ~/htu-ict-devops-cicd-webapp
-     cd ~/htu-ict-devops-cicd-webapp
+     #mkdir ~/htu-ict-devops-cicd-webapp
+     #cd ~/htu-ict-devops-cicd-webapp
       #sudo  python3.6 -m venv myprojectenv
       #source myprojectenv/bin/activate
       #sudo  python3.6 -m venv s
