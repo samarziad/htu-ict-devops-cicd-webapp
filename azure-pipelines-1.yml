@@ -6,8 +6,6 @@
 pool:
   vmImage: 'ubuntu-latest'
 
-
-
 steps: 
 
 - script: |
@@ -22,6 +20,7 @@ steps:
     bash   setup2.sh
   displayName: 'setup enviremnint 2 script'
 
+
 # Start the deployment process
 - task: CopyFilesOverSSH@0
   inputs:
@@ -32,6 +31,7 @@ steps:
     cleanTargetFolder: true
     readyTimeout: '20000'
     failOnEmptySource: true 
+
 
 - script: |
     bash    serverRun.sh
