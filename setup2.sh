@@ -10,4 +10,4 @@
       #sudo pip install gunicorn flask click itsdangerous Jinja2 MarkupSafe Werkzeug
        
        sudo pip install -r requirements.txt
-      sudo gunicorn --bind= 0.0.0.0:4321 --workers=4 hello:app
+      gunicorn --bind= 0.0.0.0:4321 --workers=4 hello:app
