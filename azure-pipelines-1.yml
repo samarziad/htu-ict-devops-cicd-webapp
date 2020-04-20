@@ -12,9 +12,6 @@ steps:
     bash   setup.sh 
   displayName: 'setup enviremnint 1 script'
 
-- script: |
-   git clone https://github.com/samarziad/htu-ict-devops-cicd-webapp.git
-  displayName: 'clone  github '
 
 - script: |
     bash   setup2.sh
