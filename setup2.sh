@@ -10,7 +10,12 @@
       echo  "${PATH}"
       sudo pip install wheel
       sudo pip install -r requirements.txt
+      sudo service nginx start
       
+      
+      cd ~/htu-ict-devops-cicd-webapp 
+      echo  "${PATH}"
+       echo  "${ls -al}"
       #sudo pip install gunicorn flask click itsdangerous Jinja2 MarkupSafe Werkzeug
        #pip3 install --user pipenv
        #pipenv install gunicorn
