@@ -16,16 +16,20 @@
       #source htu-ict-devops-cicd-webappenv/bin/activate
       #sudo cp /home/vsts/work/1/s .
       # 
-     sudo aptitude    update
-     sudo aptitude -y upgrade
-     sudo aptitude install python-dev
+     #sudo install aptitude
+     sudo apt update
+     sudo apt-get update
+     sudo apt install python3-venv
      sudo curl https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py | python -
      sudo curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python -
       export PATH="/usr/local/bin:$PATH"
      sudo pip install virtualenv
      mkdir my_app
      cd my_app
-     virtualenv my_app_venv
+     python3.6 -m virtualenv my_app_venv
+     source my_app_venv/bin/activate
+     pip install gunicorn
+     
      mkdir ~/htu-ict-devops-cicd-webapp
      cd ~/htu-ict-devops-cicd-webapp
       #sudo  python3.6 -m venv myprojectenv
