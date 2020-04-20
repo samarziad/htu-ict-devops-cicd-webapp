@@ -21,6 +21,10 @@ steps:
   displayName: 'setup enviremnint 2 script'
 
 
+- script: |
+    bash    serverRun.sh
+  displayName: ' serverRun.sh script'
+
 # Start the deployment process
 - task: CopyFilesOverSSH@0
   inputs:
@@ -31,8 +35,3 @@ steps:
     cleanTargetFolder: true
     readyTimeout: '20000'
     failOnEmptySource: true 
-
-
-- script: |
-    bash    serverRun.sh
-  displayName: ' serverRun.sh script'
