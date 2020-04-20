@@ -16,12 +16,12 @@
       #source htu-ict-devops-cicd-webappenv/bin/activate
       #sudo cp /home/vsts/work/1/s .
       # 
-     aptitude    update
-     aptitude -y upgrade
-     aptitude install python-dev
+     sudo aptitude    update
+     sudo aptitude -y upgrade
+     sudo aptitude install python-dev
      sudo curl https://bitbucket.org/pypa/setuptools/raw/bootstrap/ez_setup.py | python -
      sudo curl https://raw.github.com/pypa/pip/master/contrib/get-pip.py | python -
-     sudo export PATH="/usr/local/bin:$PATH"
+      export PATH="/usr/local/bin:$PATH"
      sudo pip install virtualenv
      mkdir my_app
      cd my_app
