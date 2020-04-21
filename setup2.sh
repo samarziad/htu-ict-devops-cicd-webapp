@@ -3,7 +3,7 @@
      
       
       sudo -H python3.6 -m venv .
-      source -H ./bin/activate
+      source ./bin/activate
       sudo pip install -r requirements.txt
      
   
