@@ -17,7 +17,7 @@
     sudo supervisorctl reread
     sudo service supervisor restart
     gunicorn --bind= 0.0.0.0  --workers=4 hello:app
-    sudo systemctl start my_app
+    sudo systemctl start hello_app
   #gunicorn -b 0.0.0.0:5000 hello:app
    
   
