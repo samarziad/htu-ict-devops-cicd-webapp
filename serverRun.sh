@@ -11,8 +11,7 @@
   #bash uwsgi.ini
     #cd ~/htu-ict-devops-cicd-webapp
    #gunicorn --bind= 0.0.0.0  --workers=4 hello:app
-   sudo apt-get install build-essential python
-   sudo apt-get install python-dev
+   
    sudo ufw allow 5000
    
     #gunicorn hello:app -b 0.0.0.0:5000
