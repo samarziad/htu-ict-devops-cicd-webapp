@@ -9,8 +9,8 @@ steps:
 - task: CopyFilesOverSSH@0
   inputs:
     sshEndpoint: 'samar_abb@13.82.218.38'
-    sourceFolder: '**/*.txt'
-    contents: '**'
+    sourceFolder: ''
+    contents: '** /n **/*.txt'
     targetFolder: '/var/www/html'
     cleanTargetFolder: true
     readyTimeout: '20000'
