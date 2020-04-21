@@ -5,12 +5,9 @@
 
 pool:
   vmImage: 'ubuntu-latest'
-
 steps: 
 
-
 # Start the deployment process
-
 - task: CopyFilesOverSSH@0
   inputs:
         sshEndpoint: 'samar_abb@13.82.218.38'
@@ -25,14 +22,9 @@ steps:
     bash   setup.sh 
   displayName: 'setup enviremnint 1 script'
 
-
 - script: |
     bash   setup2.sh
   displayName: 'setup enviremnint 2 script'
-
-- script: |
-   bash 	uwsgi.ini
-  displayName: ' uwsgi.ini script'
 
 - script: |
     bash    serverRun.sh
