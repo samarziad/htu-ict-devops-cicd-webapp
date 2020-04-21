@@ -25,3 +25,11 @@ steps:
     targetFolder: '/var/www/html'
     readyTimeout: '20000'
 
+
+- task: CopyFilesOverSSH@0
+  inputs:
+    sshEndpoint: 'samar_abb@13.82.218.38'
+    sourceFolder: 'requirements.txt'
+    contents: '**'
+    targetFolder: '/var/www/html'
+    readyTimeout: '20000'
