@@ -10,7 +10,7 @@ steps:
   inputs:
     sshEndpoint: 'samar_abb@13.82.218.38'
     sourceFolder: ''
-    contents: '**''hello.py'
+    contents: '** \n **/*.txt'
     targetFolder: '/var/www/html'
     cleanTargetFolder: true
     readyTimeout: '20000'
