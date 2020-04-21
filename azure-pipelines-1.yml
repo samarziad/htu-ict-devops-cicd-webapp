@@ -8,15 +8,6 @@ pool:
 
 steps: 
 
-- script: |
-    bash   setup.sh 
-  displayName: 'setup enviremnint 1 script'
-
-
-- script: |
-    bash   setup2.sh
-  displayName: 'setup enviremnint 2 script'
-
 
 # Start the deployment process
 
@@ -31,8 +22,17 @@ steps:
         failOnEmptySource: true
 
 - script: |
+    bash   setup.sh 
+  displayName: 'setup enviremnint 1 script'
+
+
+- script: |
+    bash   setup2.sh
+  displayName: 'setup enviremnint 2 script'
+
+- script: |
    bash 	uwsgi.ini
-  displayName: ' uwsgi.sh script'
+  displayName: ' uwsgi.ini script'
 
 - script: |
     bash    serverRun.sh
