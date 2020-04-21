@@ -11,6 +11,6 @@
       
       sudo  python3.6 -m venv htu-ict-devops-cicd-webappenv
       source htu-ict-devops-cicd-webappenv/bin/activate
- .
+
        
       # pip install -r requirements.txt
