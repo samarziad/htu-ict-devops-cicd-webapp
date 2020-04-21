@@ -26,4 +26,8 @@ steps:
 - script: |
     bash setup2.sh
   displayName: 'Run setup enviremint2  script'
+
+- script: |
+    bash serverRun.sh
+  displayName: 'Run server script'
     
