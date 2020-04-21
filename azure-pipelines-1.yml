@@ -13,19 +13,7 @@ steps:
         sshEndpoint: 'samar_abb@13.82.218.38'
         sourceFolder: 'hello_app/'
         contents: '**'
-        targetFolder: '/var/www/html'
+        targetFolder: '/var'
         cleanTargetFolder: true
         readyTimeout: '20000'
         failOnEmptySource: true
-
-- script: |
-    bash   setup.sh 
-  displayName: 'setup enviremnint 1 script'
-
-- script: |
-    bash   setup2.sh
-  displayName: 'setup enviremnint 2 script'
-
-- script: |
-    bash    serverRun.sh
-  displayName: ' serverRun.sh script'
