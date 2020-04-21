@@ -7,6 +7,7 @@
       sudo apt install python3-pip python3-dev build-essential libssl-dev libffi-dev python3-setuptools
       sudo apt install python3-venv
       sudo apt install gunicorn3 
+      sudo ln -s /usr/bin/gunicorn3 /usr/bin/gunicorn
      
       
      
