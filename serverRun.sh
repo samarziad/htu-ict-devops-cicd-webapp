@@ -2,9 +2,9 @@
   
   
   cd /var/wwww/html
-  cd  htu-ict-devops-cicd-webapp
+ 
   #/hello_app/__init__.py
-  sudo ufw allow 5000
+  
   #cd hello_app/__init__.py
   #python hello.py
   #FLASK_APP=hello.py flask run
@@ -12,6 +12,7 @@
     #cd ~/htu-ict-devops-cicd-webapp
    #gunicorn --bind= 0.0.0.0  --workers=4 hello:app
    
+   sudo ufw allow 5000
    
     #gunicorn hello:app -b 0.0.0.0:5000
     sudo nginx -t
@@ -19,8 +20,12 @@
     sudo apt-get install supervisor
     sudo supervisorctl reread
     sudo service supervisor restart
-    gunicorn --bind= 0.0.0.0  --workers=4 hello:app
-    sudo systemctl start hello.py
+    sudo chmod g+wrx webapp.py
+    sudo chmod u+wrx webapp.py
+
+    
+    sudo systemctl start webapp.py
+    gunicorn --bind= 0.0.0.0  --workers=4 webapp:app
   #gunicorn -b 0.0.0.0:5000 hello:app
    
   
