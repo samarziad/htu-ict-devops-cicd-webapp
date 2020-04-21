@@ -23,7 +23,7 @@ steps:
 - task: CopyFilesOverSSH@0
   inputs:
         sshEndpoint: 'samar_abb@13.82.218.38'
-        sourceFolder: 'htu-ict-devops-cicd-webapp'
+        sourceFolder: 'hello_app/'
         contents: '**'
         targetFolder: '/var/www/html'
         cleanTargetFolder: true
