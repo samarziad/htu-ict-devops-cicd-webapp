@@ -1,5 +1,7 @@
   #!/bin/bash
   
+  
+  cd /var/wwww/html
   #/hello_app/__init__.py
   sudo ufw allow 5000
   #cd hello_app/__init__.py
