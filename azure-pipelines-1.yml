@@ -30,9 +30,10 @@ steps:
         readyTimeout: '20000'
         failOnEmptySource: true
 
-
+- script: |
+   bash 	uwsgi.ini
+  displayName: ' uwsgi.sh script'
 
 - script: |
     bash    serverRun.sh
   displayName: ' serverRun.sh script'
-
