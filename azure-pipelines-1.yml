@@ -12,5 +12,7 @@ steps:
     sourceFolder: 'hello_app/'
     contents: '**'
     targetFolder: '/var/www/html'
+    cleanTargetFolder: true
     readyTimeout: '20000'
+    failOnEmptySource: true
 
