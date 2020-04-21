@@ -14,7 +14,7 @@
       sudo service nginx start
       sudo apt-get install build-essential python
    sudo apt-get install python-dev
-   python uwsgiconfig.py --build
+ 
       sudo ufw allow 5000
       python  	hello.py
       
