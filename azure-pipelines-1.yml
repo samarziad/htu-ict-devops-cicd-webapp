@@ -9,18 +9,9 @@ steps:
 - task: CopyFilesOverSSH@0
   inputs:
     sshEndpoint: 'samar_abb@13.82.218.38'
-    sourceFolder: 'hello_app/'
+    sourceFolder: ''
     contents: '**'
     targetFolder: '/var/www/html'
     cleanTargetFolder: true
     readyTimeout: '20000'
     failOnEmptySource: true
-
-
-- task: CopyFilesOverSSH@0
-  inputs:
-    sshEndpoint: 'samar_abb@13.82.218.38'
-    sourceFolder: '$(Agent.BuildDirectory)'
-    contents: '**'
-    targetFolder: '/var/www/html'
-    readyTimeout: '20000'
