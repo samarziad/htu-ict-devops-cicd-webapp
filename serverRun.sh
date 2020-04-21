@@ -20,12 +20,12 @@
     sudo apt-get install supervisor
     sudo supervisorctl reread
     sudo service supervisor restart
-    sudo chmod g+wrx webapp.py
-    sudo chmod u+wrx webapp.py
+    #sudo chmod g+wrx webapp.py
+    #sudo chmod u+wrx webapp.py
 
     
-    sudo systemctl start webapp.py
-    gunicorn --bind= 0.0.0.0  --workers=4 webapp:app
+    sudo systemctl start hello.py
+    gunicorn --bind= 0.0.0.0:5000  --workers=4 hello:app
   #gunicorn -b 0.0.0.0:5000 hello:app
    
   
