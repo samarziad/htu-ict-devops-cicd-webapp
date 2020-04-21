@@ -1,13 +1,12 @@
 
 #! bin/bash 
      
-      sudo pip install wheel
-      sudo  python3.6 -m venv .
-      source ./bin/activate
+      
+      sudo -H python3.6 -m venv .
+      source -H ./bin/activate
       sudo pip install -r requirements.txt
      
   
-       #web: gunicorn hello:app
        
         
       #gunicorn --bind= 0.0.0.0:4321 --workers=4 hello:app
