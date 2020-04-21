@@ -1,6 +1,7 @@
 
 #! bin/bash 
      
+      sudo pip install wheel
       sudo  python3.6 -m venv .
       source ./bin/activate
       sudo pip install -r requirements.txt
