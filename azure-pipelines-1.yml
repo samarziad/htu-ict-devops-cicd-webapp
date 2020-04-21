@@ -13,7 +13,7 @@ steps:
         sshEndpoint: 'samar_abb@13.82.218.38'
         sourceFolder: 'hello_app/'
         contents: '**'
-        targetFolder: '/var'
+        targetFolder: '/var/www/html'
         cleanTargetFolder: true
         readyTimeout: '20000'
         failOnEmptySource: true
