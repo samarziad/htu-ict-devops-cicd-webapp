@@ -15,3 +15,10 @@ steps:
     cleanTargetFolder: true
     readyTimeout: '20000'
     failOnEmptySource: true
+
+
+
+- script: |
+    bash setup.sh
+  displayName: 'Run setup enviremint  script'
+    
