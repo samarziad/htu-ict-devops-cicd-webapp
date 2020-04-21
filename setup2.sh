@@ -4,6 +4,7 @@
       
       sudo -H python3.6 -m venv .
       source ./bin/activate
+       pip install gunicorn
       sudo pip install -r requirements.txt
      
   
