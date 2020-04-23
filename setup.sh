@@ -1,7 +1,8 @@
 #!/bin/bash 
 
       echo  ${PATH}
-      export PATH=${PATH}:/usr/local/python3/bin
+         export PATH=${PATH}:/usr/local/python3/bin >> /etc/profile
+
        echo  ${PATH}
       sudo apt-get update
       sudo apt-get -y install python3-pip
