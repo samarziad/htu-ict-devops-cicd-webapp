@@ -9,6 +9,7 @@ steps:
 
 
 - script: |
+     cd /var/www/html
      mkdir myWebproject
      cd myWebproject
   displayName: 'Make directr0ry '
