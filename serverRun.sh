@@ -1,5 +1,5 @@
   #!/bin/bash
-  
+  echo ls -al
  sudo apt install nginx
  sudo service nginx start
  sudo ufw allow 5000
