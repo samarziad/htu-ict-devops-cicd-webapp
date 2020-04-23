@@ -4,7 +4,7 @@
         echo  ${PATH}
     #mkdir ~/myWebproject
      
-       cd myWebproject
+       #cd myWebproject
 
       python3 -m venv samar
       source samar/bin/activate  # && export PATH
