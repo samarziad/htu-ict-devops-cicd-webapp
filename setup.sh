@@ -5,6 +5,7 @@
       #mkdir myWebproject
       #cd myWebproject
       # echo  ${PATH}
+       cd  var/www/html/hello_app
       sudo apt-get update
       sudo apt-get -y install python3-pip
       sudo apt install ppython3-dev build-essential libssl-dev libffi-dev python3-setuptools
