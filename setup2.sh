@@ -7,7 +7,7 @@
        #cd myWebproject
 
       #cd var/www/html/hello_app
-      python3 -m venv.
+      python3 -m venv . 
       source ./bin/activate  # && export PATH
       pip install wheel
       
