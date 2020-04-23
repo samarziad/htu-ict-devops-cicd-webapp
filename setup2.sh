@@ -7,7 +7,7 @@
       pip install wheel
       
       sudo pip install -r requirements.txt
-     
+      sudo apt install nginx
        echo $(ls -al)
        
         
