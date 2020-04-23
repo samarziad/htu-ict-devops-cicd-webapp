@@ -6,10 +6,18 @@
 pool:
   vmImage: 'ubuntu-latest'
 steps:
+
+
+- script: |
+     mkdir myWebproject
+     cd myWebproject
+  displayName: 'Make directr0ry '
+    
+
 - task: CopyFilesOverSSH@0
   inputs:
     sshEndpoint: 'Vm-samar@13.92.242.238'
-    sourceFolder: 'hello_app'
+    sourceFolder: 'hello_app/'
     contents: '**'
     targetFolder: '/var/www/html'
     cleanTargetFolder: true
