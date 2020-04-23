@@ -2,8 +2,9 @@
 #! bin/bash 
      #export PATH=${PATH}:/usr/local/python3/bin
         echo  ${PATH}
-    mkdir ~/myWebproject
-    cd ~/myWebproject
+    #mkdir ~/myWebproject
+     
+       cd ~/myWebproject
 
       python3 -m venv samar
       source samar/bin/activate  # && export PATH
