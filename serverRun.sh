@@ -3,7 +3,7 @@
   #export PATH=${PATH}:/usr/local/python3/bin
   echo ${PATH}
  #sudo apt install nginx
- #sudo service nginx start
+  sudo service nginx start
  #sudo service nginx restart
  sudo ufw allow 5000
  python hello.py
