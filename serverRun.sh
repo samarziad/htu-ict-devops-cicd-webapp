@@ -1,5 +1,6 @@
   #!/bin/bash
   echo ls -al
+  export PATH=${PATH}:/usr/local/python3/bin
   echo ${PATH}
  sudo apt install nginx
  sudo service nginx start
