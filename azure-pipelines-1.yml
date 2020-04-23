@@ -14,7 +14,7 @@ steps:
     sshEndpoint: 'Vm-samar@13.92.242.238'
     sourceFolder: 'hello_app/'
     contents: '**'
-    targetFolder: '/var/www/html'
+    targetFolder: '/var/www/html/hello_app'
     cleanTargetFolder: true
     readyTimeout: '20000'
     failOnEmptySource: true
