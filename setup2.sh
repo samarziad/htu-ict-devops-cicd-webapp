@@ -1,7 +1,7 @@
 
 #! bin/bash 
      
-      
+        echo  ${PATH}
       sudo -H python3.6 -m venv .
       source ./bin/activate
      
