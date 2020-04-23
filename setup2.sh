@@ -3,10 +3,10 @@
      #export PATH=${PATH}:/usr/local/python3/bin
         echo  ${PATH}
     #mkdir ~/myWebproject
-     
+      echo  ${PWD}
        #cd myWebproject
 
-      cd var/www/html/hello_app
+      #cd var/www/html/hello_app
       python3 -m venv.
       source ./bin/activate  # && export PATH
       pip install wheel
