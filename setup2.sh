@@ -3,7 +3,7 @@
      #export PATH=${PATH}:/usr/local/python3/bin
         echo  ${PATH}
     mkdir ~/myWebproject
-    cd ~/myproject
+    cd ~/myWebproject
 
       python3 -m venv samar
       source samar/bin/activate  # && export PATH
