@@ -3,7 +3,7 @@
       echo  ${PATH}
          #export PATH=${PATH}:/usr/local/python3/bin >> /etc/profile
       #mkdir myWebproject
-      cd myWebproject
+      #cd myWebproject
       # echo  ${PATH}
       sudo apt-get update
       sudo apt-get -y install python3-pip
