@@ -1,5 +1,6 @@
   #!/bin/bash
   echo ls -al
+  echo ${PATH}
  sudo apt install nginx
  sudo service nginx start
  sudo ufw allow 5000
