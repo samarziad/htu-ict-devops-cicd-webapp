@@ -2,7 +2,7 @@
 
       echo  ${PATH}
          #export PATH=${PATH}:/usr/local/python3/bin >> /etc/profile
-
+      mkdir ~/myWebproject
       cd ~/myWebproject
       # echo  ${PATH}
       sudo apt-get update
