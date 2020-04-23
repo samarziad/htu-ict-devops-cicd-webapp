@@ -6,8 +6,9 @@
      
        #cd myWebproject
 
-      python3 -m venv samar
-      source samar/bin/activate  # && export PATH
+      cd var/www/html/hello_app
+      python3 -m venv.
+      source ./bin/activate  # && export PATH
       pip install wheel
       
       sudo pip install -r requirements.txt
