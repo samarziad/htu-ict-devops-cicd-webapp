@@ -6,9 +6,9 @@
       echo  ${PWD}
        #cd myWebproject
 
-       sudo cd var/www/html/hello_app
+       #sudo cd var/www/html/hello_app
       sudo python3 -m venv . 
-      source ./bin/activate  # && export PATH
+      source /bin/activate  # && export PATH
       pip install wheel
       
       sudo pip install -r requirements.txt
